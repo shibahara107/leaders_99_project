@@ -16,15 +16,15 @@ class ViewController: UIViewController {
     @IBOutlet var nameInputField: UITextField!
     @IBOutlet var messageInputField: UITextField!
     
-    var databaseRefrence: DatabaseRefrence!
+    var databaseReference: DatabaseReference!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        databaseRefrence = Database.detabase().refrence()
+        databaseReference = Database.database().reference()
         
-        databaseRefrence.observe(.childAdded, with: { snapshot in
+        databaseReference.observe(.childAdded, with: { snapshot in
             if let obj = snapshot.value as? [String: AnyObject], let name = obj["name"] as? String, let message = obj["message"] {
             let currentText = self.textView.text
             self.textView.text = (currentText ?? "") + "\n\(name) : \(message)"
@@ -34,9 +34,10 @@ class ViewController: UIViewController {
     
     @IBAction func tappedSendButton(_ sender: Any) {
      view.endEditing(true)
-
      if let name = nameInputField.text, let message = messageInputField.text {
          let messageData = ["name": name, "message": message]
+        databaseReference.childByAutoId().setValue(messageData)
+        messageInputField.text = ""
         }
     }
     
