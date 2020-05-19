@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>458979872630-jkvovpb13vu0qtmdon0kgr7h2ip6f1ev.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.458979872630-jkvovpb13vu0qtmdon0kgr7h2ip6f1ev</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBOZQzFSOpPSPZtmY1NY1modN8LlHNeM7A</string>
+	<key>GCM_SENDER_ID</key>
+	<string>458979872630</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>shibahara107.leaders-99-project</string>
+	<key>PROJECT_ID</key>
+	<string>leaders-project-shibahara107</string>
+	<key>STORAGE_BUCKET</key>
+	<string>leaders-project-shibahara107.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:458979872630:ios:02ba7e8d58055cbb19f457</string>
+	<key>DATABASE_URL</key>
+	<string>https://leaders-project-shibahara107.firebaseio.com</string>
+</dict>
+</plist>
