@@ -22,6 +22,17 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        print("Inbox")
+        
+        let currentUserID = Auth.auth().currentUser?.uid
+        let currentUserEmail = Auth.auth().currentUser?.email
+        let currentUserName = Auth.auth().currentUser?.displayName
+        print(currentUserName!)
+        print(currentUserEmail!)
+        print(currentUserID!)
+        
+        nameInputField.text = currentUserName
+        
         databaseReference = Database.database().reference()
         
         databaseReference.observe(.childAdded, with: { snapshot in
