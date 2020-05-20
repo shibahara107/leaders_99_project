@@ -57,7 +57,7 @@ class SignUpViewController: UIViewController {
         if let name = nameTextField.text,
             let email = emailTextField.text,
             let password = passTextField.text {
-            if name == "" {
+            if name.isEmpty {
                 print("name is empty")
                 nameTextField.layer.borderColor = UIColor.red.cgColor
                 return

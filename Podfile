@@ -12,7 +12,7 @@ pod 'Firebase/Analytics'
 pod 'Firebase/Core'
 pod 'Firebase/Database' 
 pod 'Firebase/Auth'
-pod 'SVProgressHUD'
+pod 'SVProgressHUD', :git => 'https://github.com/SVProgressHUD/SVProgressHUD.git'
 # add pods for any other desired Firebase products
 # https://firebase.google.com/docs/ios/setup#available-pods
 
