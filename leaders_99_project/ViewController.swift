@@ -16,7 +16,13 @@ class ViewController: UIViewController {
     @IBOutlet var nameInputField: UITextField!
     @IBOutlet var messageInputField: UITextField!
     
+    @IBOutlet var recieveIDInputField: UITextField!
+    
     var databaseReference: DatabaseReference!
+    
+    let currentUserID = Auth.auth().currentUser?.uid
+    let currentUserEmail = Auth.auth().currentUser?.email
+    let currentUserName = Auth.auth().currentUser?.displayName
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,9 +30,6 @@ class ViewController: UIViewController {
         
         print("Inbox")
         
-        let currentUserID = Auth.auth().currentUser?.uid
-        let currentUserEmail = Auth.auth().currentUser?.email
-        let currentUserName = Auth.auth().currentUser?.displayName
         print(currentUserName!)
         print(currentUserEmail!)
         print(currentUserID!)
@@ -36,17 +39,21 @@ class ViewController: UIViewController {
         databaseReference = Database.database().reference()
         
         databaseReference.observe(.childAdded, with: { snapshot in
-            if let obj = snapshot.value as? [String: AnyObject], let name = obj["name"] as? String, let message = obj["message"] {
+                        
+            if let obj = snapshot.value as? [String: AnyObject],let toID = obj["toID"] as? String, let name = obj["name"] as? String, let message = obj["message"] {
             let currentText = self.textView.text
+                if toID == self.currentUserID {
             self.textView.text = (currentText ?? "") + "\n\(name) : \(message)"
+                }
+            
             }
         })
     }
     
     @IBAction func tappedSendButton(_ sender: Any) {
      view.endEditing(true)
-     if let name = nameInputField.text, let message = messageInputField.text {
-         let messageData = ["name": name, "message": message]
+        if let toID = recieveIDInputField.text, let fromID = currentUserID, let name = nameInputField.text, let message = messageInputField.text {
+            let messageData = ["fromID": fromID, "toID": toID, "name": name, "message": message]
         databaseReference.childByAutoId().setValue(messageData)
         messageInputField.text = ""
         }
