@@ -20,6 +20,8 @@ class LogInViewController: UIViewController {
         
         // Do any additional setup after loading the view.
         
+        print("Log In")
+        
         let emailPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: self.emailTextField.frame.height))
         let passPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: self.passTextField.frame.height))
         

@@ -16,7 +16,7 @@ class ViewController: UIViewController {
     @IBOutlet var nameInputField: UITextField!
     @IBOutlet var messageInputField: UITextField!
     
-    @IBOutlet var recieveIDInputField: UITextField!
+    @IBOutlet var toIDInputField: UITextField!
     
     var databaseReference: DatabaseReference!
     
@@ -28,7 +28,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        print("Inbox")
+        print("Home")
         
         print(currentUserName!)
         print(currentUserEmail!)
@@ -51,7 +51,7 @@ class ViewController: UIViewController {
     
     @IBAction func tappedSendButton(_ sender: Any) {
      view.endEditing(true)
-        if let toID = recieveIDInputField.text, let fromID = currentUserID, let name = nameInputField.text, let message = messageInputField.text {
+        if let toID = toIDInputField.text, let fromID = currentUserID, let name = nameInputField.text, let message = messageInputField.text {
             let messageData = ["fromID": fromID, "toID": toID, "name": name, "message": message]
         databaseReference.childByAutoId().setValue(messageData)
         messageInputField.text = ""
