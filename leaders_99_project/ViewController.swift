@@ -39,7 +39,6 @@ class ViewController: UIViewController {
         databaseReference = Database.database().reference()
         
         databaseReference.observe(.childAdded, with: { snapshot in
-                        
             if let obj = snapshot.value as? [String: AnyObject],let toID = obj["toID"] as? String, let name = obj["name"] as? String, let message = obj["message"] {
             let currentText = self.textView.text
                 if toID == self.currentUserID {
