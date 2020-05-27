@@ -77,7 +77,7 @@ class LogInViewController: UIViewController {
                     let when = DispatchTime.now()
                     DispatchQueue.main.asyncAfter(deadline: when) {
                         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-                        let viewController = storyboard.instantiateViewController(identifier: "ViewController")
+                        let viewController = storyboard.instantiateViewController(identifier: "HomeViewController")
                         
                         viewController.modalPresentationStyle = .fullScreen
                         

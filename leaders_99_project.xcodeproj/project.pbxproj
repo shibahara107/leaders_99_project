@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		07FEFCF06BAE984BD7119E98 /* Pods_leaders_99_project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FF0AACFB159C98C9813CB01 /* Pods_leaders_99_project.framework */; };
 		802E2A2DC0219502BA61174B /* Pods_leaders_99_projectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F11DED3F8849CB4C89D338A /* Pods_leaders_99_projectTests.framework */; };
+		D102D465247E82930072F9AF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102D464247E82930072F9AF /* HomeViewController.swift */; };
 		D10525A72474DCF20007309A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10525A62474DCF20007309A /* SignUpViewController.swift */; };
 		D10525A9247537670007309A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10525A8247537670007309A /* LogInViewController.swift */; };
 		D179B0B524790C3100654EF1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D179B0B424790C3000654EF1 /* TableViewController.swift */; };
@@ -51,6 +52,7 @@
 		75BFCF4EBA643C415EFDF84C /* Pods_leaders_99_project_leaders_99_projectUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_leaders_99_project_leaders_99_projectUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7754840CE17CA2749A1BE36B /* Pods-leaders_99_projectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-leaders_99_projectTests.debug.xcconfig"; path = "Target Support Files/Pods-leaders_99_projectTests/Pods-leaders_99_projectTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B2FD30C66E9D3D106BF1D988 /* Pods-leaders_99_project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-leaders_99_project.debug.xcconfig"; path = "Target Support Files/Pods-leaders_99_project/Pods-leaders_99_project.debug.xcconfig"; sourceTree = "<group>"; };
+		D102D464247E82930072F9AF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D10525A62474DCF20007309A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D10525A8247537670007309A /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		D14AB25EBDC1BC674B4EDB97 /* Pods-leaders_99_project-leaders_99_projectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-leaders_99_project-leaders_99_projectUITests.debug.xcconfig"; path = "Target Support Files/Pods-leaders_99_project-leaders_99_projectUITests/Pods-leaders_99_project-leaders_99_projectUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 			children = (
 				D1F68E602473E2B6004056EF /* AppDelegate.swift */,
 				D1F68E622473E2B6004056EF /* SceneDelegate.swift */,
+				D102D464247E82930072F9AF /* HomeViewController.swift */,
 				D1F68E642473E2B6004056EF /* ViewController.swift */,
 				D10525A62474DCF20007309A /* SignUpViewController.swift */,
 				D10525A8247537670007309A /* LogInViewController.swift */,
@@ -429,6 +432,7 @@
 				D1F68E612473E2B6004056EF /* AppDelegate.swift in Sources */,
 				D10525A72474DCF20007309A /* SignUpViewController.swift in Sources */,
 				D10525A9247537670007309A /* LogInViewController.swift in Sources */,
+				D102D465247E82930072F9AF /* HomeViewController.swift in Sources */,
 				D1F68E632473E2B6004056EF /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
