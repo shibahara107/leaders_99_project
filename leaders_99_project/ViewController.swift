@@ -25,6 +25,7 @@ class ViewController: UIViewController {
     let currentUserEmail = Auth.auth().currentUser?.email
     let currentUserName = Auth.auth().currentUser?.displayName
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -59,6 +60,10 @@ class ViewController: UIViewController {
             toIDInputField.text = ""
             messageInputView.text = ""
         }
+    }
+    
+    @IBAction func pushCloseButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
     }
     
 }

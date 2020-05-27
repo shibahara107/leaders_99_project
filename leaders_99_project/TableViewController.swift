@@ -121,4 +121,8 @@ class TableViewController: UITableViewController {
      }
      */
     
+    @IBAction func pushCloseButton(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
 }
