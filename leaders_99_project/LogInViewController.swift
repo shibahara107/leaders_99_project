@@ -76,7 +76,14 @@ class LogInViewController: UIViewController {
                     
                     let when = DispatchTime.now()
                     DispatchQueue.main.asyncAfter(deadline: when) {
-                        self.present((self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController), animated: true, completion: nil)
+                        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                        let viewController = storyboard.instantiateViewController(identifier: "ViewController")
+                        
+                        viewController.modalPresentationStyle = .fullScreen
+                        
+                        self.present(viewController, animated: true, completion: nil)
+                        
+//                        self.present((self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController), animated: true, completion: nil)
                     }
                     
                 }

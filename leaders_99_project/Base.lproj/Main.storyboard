@@ -118,7 +118,6 @@
         <!--Table View Controller-->
         <scene sceneID="Rgb-dA-WD3">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rjK-6Z-bKL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <tableViewController id="F1s-kb-Hlt" customClass="TableViewController" customModule="leaders_99_project" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="TTO-7F-VgN">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -140,6 +139,7 @@
                         </connections>
                     </tableView>
                 </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rjK-6Z-bKL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-947.82608695652186" y="799.55357142857144"/>
         </scene>
