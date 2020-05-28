@@ -12,6 +12,8 @@
 		D102D465247E82930072F9AF /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D102D464247E82930072F9AF /* HomeViewController.swift */; };
 		D10525A72474DCF20007309A /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10525A62474DCF20007309A /* SignUpViewController.swift */; };
 		D10525A9247537670007309A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10525A8247537670007309A /* LogInViewController.swift */; };
+		D10B3129247FCA5300BEB8FC /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10B3127247FCA5300BEB8FC /* CustomTableViewCell.swift */; };
+		D10B312A247FCA5300BEB8FC /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D10B3128247FCA5300BEB8FC /* CustomTableViewCell.xib */; };
 		D179B0B524790C3100654EF1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D179B0B424790C3000654EF1 /* TableViewController.swift */; };
 		D1F68E612473E2B6004056EF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F68E602473E2B6004056EF /* AppDelegate.swift */; };
 		D1F68E632473E2B6004056EF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F68E622473E2B6004056EF /* SceneDelegate.swift */; };
@@ -55,6 +57,8 @@
 		D102D464247E82930072F9AF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		D10525A62474DCF20007309A /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		D10525A8247537670007309A /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		D10B3127247FCA5300BEB8FC /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		D10B3128247FCA5300BEB8FC /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 		D14AB25EBDC1BC674B4EDB97 /* Pods-leaders_99_project-leaders_99_projectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-leaders_99_project-leaders_99_projectUITests.debug.xcconfig"; path = "Target Support Files/Pods-leaders_99_project-leaders_99_projectUITests/Pods-leaders_99_project-leaders_99_projectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D179B0B424790C3000654EF1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		D1F68E5D2473E2B6004056EF /* leaders_99_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = leaders_99_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -163,6 +167,8 @@
 				D1F68E692473E2B8004056EF /* Assets.xcassets */,
 				D1F68E6E2473E2B8004056EF /* Info.plist */,
 				D1F68E902473E31D004056EF /* GoogleService-Info.plist */,
+				D10B3127247FCA5300BEB8FC /* CustomTableViewCell.swift */,
+				D10B3128247FCA5300BEB8FC /* CustomTableViewCell.xib */,
 			);
 			path = leaders_99_project;
 			sourceTree = "<group>";
@@ -297,6 +303,7 @@
 				D1F68E6D2473E2B8004056EF /* LaunchScreen.storyboard in Resources */,
 				D1F68E912473E31D004056EF /* GoogleService-Info.plist in Resources */,
 				D1F68E6A2473E2B8004056EF /* Assets.xcassets in Resources */,
+				D10B312A247FCA5300BEB8FC /* CustomTableViewCell.xib in Resources */,
 				D1F68E682473E2B6004056EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -429,6 +436,7 @@
 			files = (
 				D1F68E652473E2B6004056EF /* ViewController.swift in Sources */,
 				D179B0B524790C3100654EF1 /* TableViewController.swift in Sources */,
+				D10B3129247FCA5300BEB8FC /* CustomTableViewCell.swift in Sources */,
 				D1F68E612473E2B6004056EF /* AppDelegate.swift in Sources */,
 				D10525A72474DCF20007309A /* SignUpViewController.swift in Sources */,
 				D10525A9247537670007309A /* LogInViewController.swift in Sources */,

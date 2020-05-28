@@ -48,6 +48,8 @@ class TableViewController: UITableViewController {
             })
         }
         
+        self.tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
+        
     }
     
     // MARK: - Table view data source
@@ -64,13 +66,17 @@ class TableViewController: UITableViewController {
     
     
      override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell: UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomTableViewCell
      
         let messageContent = messageArray[indexPath.row] as! [String: AnyObject]
-        cell.textLabel?.text = messageContent["message"] as? String
-                
+        cell.messageLabel.text = messageContent["message"] as? String
+
         let fromName = messageContent["name"] as? String
-        cell.detailTextLabel?.text = (fromName ?? "")
+        cell.fromNameLabel.text = (fromName ?? "")
+
+        let toName = messageContent["toName"] as? String
+        cell.toNameLabel.text = (toName ?? "")
+        
      
      return cell
      }
