@@ -139,18 +139,42 @@
                                     <action selector="writeButtonTapped:" destination="3qc-Fc-Vs6" eventType="touchUpInside" id="iJb-un-DcF"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uq0-nW-8hL">
+                                <rect key="frame" x="43" y="80" width="329" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7A6-0o-nc1">
+                                <rect key="frame" x="43" y="109" width="329" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtK-EJ-6Gc">
+                                <rect key="frame" x="43" y="138" width="329" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="w7k-aX-Tpz"/>
                     </view>
                     <connections>
+                        <outlet property="currentUserEmailLabel" destination="7A6-0o-nc1" id="bCk-wa-zGe"/>
+                        <outlet property="currentUserIDLabel" destination="TtK-EJ-6Gc" id="ZRt-Vk-x5U"/>
+                        <outlet property="currentUserNameLabel" destination="Uq0-nW-8hL" id="OIV-Ja-1Xv"/>
                         <outlet property="inboxButton" destination="OMq-We-d5u" id="xeH-la-IJq"/>
                         <outlet property="writeButton" destination="oLw-5z-Hox" id="6ax-A7-AfH"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tDw-Cz-joe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="432" y="116"/>
+            <point key="canvasLocation" x="431.8840579710145" y="115.84821428571428"/>
         </scene>
         <!--Table View Controller-->
         <scene sceneID="Rgb-dA-WD3">

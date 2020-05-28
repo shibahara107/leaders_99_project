@@ -20,6 +20,10 @@ class HomeViewController: UIViewController {
     
     @IBOutlet var writeButton: UIButton!
     @IBOutlet var inboxButton: UIButton!
+    
+    @IBOutlet var currentUserNameLabel: UILabel!
+    @IBOutlet var currentUserEmailLabel: UILabel!
+    @IBOutlet var currentUserIDLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,6 +36,11 @@ class HomeViewController: UIViewController {
         print(currentUserID!)
         
         databaseReference = Database.database().reference()
+        
+        currentUserNameLabel.text = "userName: \(currentUserName ?? "")"
+        currentUserEmailLabel.text = "userEmail: \(currentUserEmail ?? "")"
+        currentUserIDLabel.text = "userID: \(currentUserID ?? "")"
+        
         
     }
     
