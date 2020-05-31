@@ -85,8 +85,17 @@ class TableViewController: UITableViewController {
         print("selected cell at: ", indexPath.row)
         
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let messageViewController = storyboard.instantiateViewController(identifier: "MessageViewController")
+        let messageViewController = storyboard.instantiateViewController(identifier: "MessageViewController") as! MessageViewController
         
+        let messageContent = messageArray[indexPath.row] as! [String: AnyObject]
+        let message = messageContent["message"] as? String
+        let fromName = messageContent["name"] as? String
+        let toName = messageContent["toName"] as? String
+        
+        messageViewController.messageContent = message
+        messageViewController.fromName = fromName
+        messageViewController.toName = toName
+                
         messageViewController.modalPresentationStyle = .fullScreen
         self.present(messageViewController, animated: true, completion: nil)
     }

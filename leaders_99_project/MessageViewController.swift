@@ -9,11 +9,23 @@
 import UIKit
 
 class MessageViewController: UIViewController {
+    
+    var messageContent: String!
+    var fromName: String!
+    var toName: String!
+    
+    @IBOutlet var messageContentLabel: UILabel!
+    @IBOutlet var fromNameLabel: UILabel!
+    @IBOutlet var toNameLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Do any additional setup after loading the view.
+        
+        messageContentLabel.text = messageContent
+        fromNameLabel.text = fromName
+        toNameLabel.text = toName
+        
     }
     
 
