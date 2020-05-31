@@ -50,6 +50,8 @@ class TableViewController: UITableViewController {
         
         self.tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
         
+        tableView.reloadData()
+        
     }
     
     // MARK: - Table view data source
@@ -67,8 +69,16 @@ class TableViewController: UITableViewController {
     
      override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomTableViewCell
-     
+        
         let messageContent = messageArray[indexPath.row] as! [String: AnyObject]
+
+        let readStatus = messageContent["readStatus"] as? String
+        if readStatus == "unread" {
+            cell.backgroundColor = UIColor.red
+        } else if readStatus == "read" {
+            cell.backgroundColor = UIColor.blue
+        }
+     
         cell.messageLabel.text = messageContent["message"] as? String
 
         let fromName = messageContent["name"] as? String
@@ -76,7 +86,6 @@ class TableViewController: UITableViewController {
 
         let toName = messageContent["toName"] as? String
         cell.toNameLabel.text = (toName ?? "")
-        
      
      return cell
      }

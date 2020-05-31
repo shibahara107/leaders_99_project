@@ -54,7 +54,8 @@ class ViewController: UIViewController {
     @IBAction func tappedSendButton(_ sender: Any) {
         view.endEditing(true)
         if let toName = toNameInputField.text, let toID = toIDInputField.text, let fromID = currentUserID, let fromName = fromNameInputField.text, let message = messageInputView.text {
-            let messageData = ["toName": toName, "toID": toID, "message": message, "name": fromName, "fromID": fromID]
+            let readStatus: String = "unread"
+            let messageData = ["toName": toName, "toID": toID, "message": message, "name": fromName, "fromID": fromID, "readStatus": readStatus]
             databaseReference.childByAutoId().setValue(messageData)
             toNameInputField.text = ""
             toIDInputField.text = ""
