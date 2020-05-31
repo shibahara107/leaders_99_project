@@ -80,6 +80,16 @@ class TableViewController: UITableViewController {
      
      return cell
      }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print("selected cell at: ", indexPath.row)
+        
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let messageViewController = storyboard.instantiateViewController(identifier: "MessageViewController")
+        
+        messageViewController.modalPresentationStyle = .fullScreen
+        self.present(messageViewController, animated: true, completion: nil)
+    }
  
     
     /*

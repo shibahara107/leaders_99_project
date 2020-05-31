@@ -274,5 +274,31 @@
             </objects>
             <point key="canvasLocation" x="-158" y="800"/>
         </scene>
+        <!--Message View Controller-->
+        <scene sceneID="CTA-e9-cHc">
+            <objects>
+                <viewController storyboardIdentifier="MessageViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="PY6-j3-Ymf" customClass="MessageViewController" customModule="leaders_99_project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QkH-VP-gSO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9L-wv-7uZ">
+                                <rect key="frame" x="190" y="72" width="34" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Back"/>
+                                <connections>
+                                    <action selector="pushCloseButton:" destination="PY6-j3-Ymf" eventType="touchUpInside" id="H5v-5Q-fhZ"/>
+                                    <action selector="pushCloseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iJf-cr-7Xo"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="de6-cl-PUB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fWg-Y4-274" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="637.68115942028987" y="799.55357142857144"/>
+        </scene>
     </scenes>
 </document>

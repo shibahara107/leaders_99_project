@@ -80,7 +80,6 @@ class LogInViewController: UIViewController {
                         let viewController = storyboard.instantiateViewController(identifier: "HomeViewController")
                         
                         viewController.modalPresentationStyle = .fullScreen
-                        
                         self.present(viewController, animated: true, completion: nil)
                         
 //                        self.present((self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController), animated: true, completion: nil)
