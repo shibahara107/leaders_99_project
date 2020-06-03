@@ -42,6 +42,7 @@ class TableViewController: UITableViewController {
                         print(messageContent)
                         self.messageArray.insert(messageContent, at: 0)
                         print(self.messageArray.count)
+                        print(self.messageArray)
                         self.tableView.reloadData()
                     }
                 }
@@ -71,13 +72,6 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomTableViewCell
         
         let messageContent = messageArray[indexPath.row] as! [String: AnyObject]
-
-        let readStatus = messageContent["readStatus"] as? String
-        if readStatus == "unread" {
-            cell.backgroundColor = UIColor.red
-        } else if readStatus == "read" {
-            cell.backgroundColor = UIColor.blue
-        }
      
         cell.messageLabel.text = messageContent["message"] as? String
 
@@ -96,7 +90,7 @@ class TableViewController: UITableViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let messageViewController = storyboard.instantiateViewController(identifier: "MessageViewController") as! MessageViewController
         
-        let messageContent = messageArray[indexPath.row] as! [String: AnyObject]
+        var messageContent = messageArray[indexPath.row] as! [String: AnyObject]
         let message = messageContent["message"] as? String
         let fromName = messageContent["name"] as? String
         let toName = messageContent["toName"] as? String
@@ -104,6 +98,8 @@ class TableViewController: UITableViewController {
         messageViewController.messageContent = message
         messageViewController.fromName = fromName
         messageViewController.toName = toName
+        
+        print(messageArray[indexPath.row] as! [String: AnyObject])
                 
         messageViewController.modalPresentationStyle = .fullScreen
         self.present(messageViewController, animated: true, completion: nil)

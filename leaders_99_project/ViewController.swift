@@ -25,6 +25,8 @@ class ViewController: UIViewController {
     let currentUserEmail = Auth.auth().currentUser?.email
     let currentUserName = Auth.auth().currentUser?.displayName
     
+    let date: Date = Date()
+    let dateFormatter = DateFormatter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -40,6 +42,8 @@ class ViewController: UIViewController {
         
         databaseReference = Database.database().reference()
         
+        dateFormatter.dateFormat = "yyyyMMddHHmm"
+        
 //        databaseReference.observe(.childAdded, with: { snapshot in
 //            if let obj = snapshot.value as? [String: AnyObject], let toName = obj["toName"] as? String, let toID = obj["toID"] as? String, let fromName = obj["fromName"] as? String, let message = obj["message"] {
 //                let currentText = self.textView.text
@@ -54,12 +58,13 @@ class ViewController: UIViewController {
     @IBAction func tappedSendButton(_ sender: Any) {
         view.endEditing(true)
         if let toName = toNameInputField.text, let toID = toIDInputField.text, let fromID = currentUserID, let fromName = fromNameInputField.text, let message = messageInputView.text {
-            let readStatus: String = "unread"
-            let messageData = ["toName": toName, "toID": toID, "message": message, "name": fromName, "fromID": fromID, "readStatus": readStatus]
+            let sentDate = dateFormatter.string(from: date)
+            let messageData = ["toName": toName, "toID": toID, "message": message, "name": fromName, "fromID": fromID, "sentDate": sentDate]
             databaseReference.childByAutoId().setValue(messageData)
             toNameInputField.text = ""
             toIDInputField.text = ""
             messageInputView.text = ""
+            print(sentDate)
         }
     }
     
