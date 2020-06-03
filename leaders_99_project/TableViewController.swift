@@ -20,6 +20,10 @@ class TableViewController: UITableViewController {
     
     var messageArray = [Any]()
     
+    let date: Date = Date()
+    let dateFormatter = DateFormatter()
+    var currentDate: String = ""
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -50,17 +54,21 @@ class TableViewController: UITableViewController {
         }
         
         self.tableView.register(UINib(nibName: "CustomTableViewCell", bundle: nil), forCellReuseIdentifier: "CustomCell")
+        self.tableView.register(UINib(nibName: "SecondCustomTableViewCell", bundle: nil), forCellReuseIdentifier: "SecondCustom")
         
         tableView.reloadData()
+        
+        dateFormatter.dateFormat = "yyyyMMddHHmm"
+        currentDate = dateFormatter.string(from: date)
         
     }
     
     // MARK: - Table view data source
     
-//    override func numberOfSections(in tableView: UITableView) -> Int {
-//        // #warning Incomplete implementation, return the number of sections
-//        return 0
-//    }
+    //    override func numberOfSections(in tableView: UITableView) -> Int {
+    //        // #warning Incomplete implementation, return the number of sections
+    //        return 0
+    //    }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
@@ -68,21 +76,51 @@ class TableViewController: UITableViewController {
     }
     
     
-     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomTableViewCell
         
         let messageContent = messageArray[indexPath.row] as! [String: AnyObject]
-     
+        
+        //        let sentDate = messageContent["sentDate"] as? String
+        //
+        //        print("sentDate:", sentDate)
+        //
+        //        if sentDate != nil {
+        //            if Int(currentDate)! - Int(sentDate!)! >= 2 {
+        //                print("time interval:", Int(currentDate)! - Int(sentDate!)!)
+        //                print("should be hidden:", indexPath)
+        //
+        //                let cell2 = tableView.dequeueReusableCell(withIdentifier: "SecondCustom", for: indexPath) as! SecondCustomTableViewCell
+        //
+        //                return cell2
+        //            }
+        //        }
+        
         cell.messageLabel.text = messageContent["message"] as? String
-
+        
         let fromName = messageContent["name"] as? String
         cell.fromNameLabel.text = (fromName ?? "")
-
+        
         let toName = messageContent["toName"] as? String
         cell.toNameLabel.text = (toName ?? "")
-     
-     return cell
-     }
+        
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        let messageContent = messageArray[indexPath.row] as! [String: AnyObject]
+        let sentDate = messageContent["sentDate"] as? String
+        
+        if sentDate != nil {
+            if Int(currentDate)! - Int(sentDate!)! <= 20000 {
+                return 0
+            } else {
+                return 100
+            }
+        }
+        return 100
+    }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("selected cell at: ", indexPath.row)
@@ -100,11 +138,11 @@ class TableViewController: UITableViewController {
         messageViewController.toName = toName
         
         print(messageArray[indexPath.row] as! [String: AnyObject])
-                
+        
         messageViewController.modalPresentationStyle = .fullScreen
         self.present(messageViewController, animated: true, completion: nil)
     }
- 
+    
     
     /*
      // Override to support conditional editing of the table view.
