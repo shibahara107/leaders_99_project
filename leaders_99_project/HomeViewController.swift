@@ -48,6 +48,7 @@ class HomeViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let writeViewController = storyboard.instantiateViewController(identifier: "WriteViewController")
         writeViewController.modalPresentationStyle = .fullScreen
+        writeViewController.modalTransitionStyle = .crossDissolve
         self.present(writeViewController, animated: true, completion: nil)
     }
     
@@ -55,6 +56,7 @@ class HomeViewController: UIViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let inboxViewController = storyboard.instantiateViewController(identifier: "InboxViewController")
         inboxViewController.modalPresentationStyle = .fullScreen
+        inboxViewController.modalTransitionStyle = .crossDissolve
         self.present(inboxViewController, animated: true, completion: nil)
     }
     
