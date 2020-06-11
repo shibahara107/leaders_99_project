@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
+import PKHUD
 
 class HomeViewController: UIViewController {
     
@@ -62,6 +63,11 @@ class HomeViewController: UIViewController {
         inboxViewController.modalPresentationStyle = .fullScreen
         inboxViewController.modalTransitionStyle = .crossDissolve
         self.present(inboxViewController, animated: true, completion: nil)
+    }
+    
+    @IBAction func userIDButtonTapped(_ sender: Any) {
+        UIPasteboard.general.string = "\(currentUserID ?? "")"
+        HUD.flash(.label("Copied ID to clipboard"), delay: 0.5)
     }
     
 

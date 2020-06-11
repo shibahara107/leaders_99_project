@@ -28,9 +28,13 @@ class ViewController: UIViewController {
     let date: Date = Date()
     let dateFormatter = DateFormatter()
     
+    let backgroundColor = UIColor(red: 244/255.0, green: 244/255.0, blue: 244/255.0, alpha: 1.0)
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        view.backgroundColor = backgroundColor
         
         print("Write")
         

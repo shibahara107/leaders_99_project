@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3qc-Fc-Vs6">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O1b-kI-QxT">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -169,6 +169,21 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b8e-WO-Emf">
+                                <rect key="frame" x="349" y="54" width="45" height="45"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="b8e-WO-Emf" secondAttribute="height" multiplier="1:1" id="hvA-cp-CJR"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <color key="tintColor" systemColor="opaqueSeparatorColor" red="0.77647058820000003" green="0.77647058820000003" blue="0.7843137255" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" image="person.circle.fill" catalog="system">
+                                    <color key="titleColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <preferredSymbolConfiguration key="preferredSymbolConfiguration" scale="large"/>
+                                </state>
+                                <connections>
+                                    <action selector="userIDButtonTapped:" destination="3qc-Fc-Vs6" eventType="touchUpInside" id="vrq-P9-TWs"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMq-We-d5u">
                                 <rect key="frame" x="47" y="566" width="161" height="53.5"/>
                                 <constraints>
@@ -180,9 +195,10 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vSt-N4-Wyw" userLabel="VerticalCriterionView">
-                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="896"/>
+                                <rect key="frame" x="0.0" y="0.0" width="1" height="896"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <constraints>
+                                    <constraint firstAttribute="width" secondItem="vSt-N4-Wyw" secondAttribute="height" multiplier="1:896" id="063-J6-Ryg"/>
                                     <constraint firstAttribute="width" id="jm6-qD-xJn"/>
                                 </constraints>
                             </view>
@@ -213,10 +229,13 @@
                             <constraint firstItem="Qdr-lY-T4x" firstAttribute="height" secondItem="vSt-N4-Wyw" secondAttribute="height" multiplier="0.63" id="hiH-eB-K6Y"/>
                             <constraint firstItem="SiJ-7X-X2B" firstAttribute="leading" secondItem="oLw-5z-Hox" secondAttribute="trailing" constant="1" id="hpt-xT-pnN"/>
                             <constraint firstItem="OMq-We-d5u" firstAttribute="height" secondItem="vSt-N4-Wyw" secondAttribute="height" multiplier="0.06" id="ido-k5-qcN"/>
+                            <constraint firstItem="b8e-WO-Emf" firstAttribute="top" secondItem="wad-qQ-ddA" secondAttribute="bottom" constant="10" id="ifo-9c-gaC"/>
                             <constraint firstItem="jg8-Az-M9i" firstAttribute="leading" secondItem="w7k-aX-Tpz" secondAttribute="leading" id="jSq-SU-xIE"/>
                             <constraint firstItem="SiJ-7X-X2B" firstAttribute="width" secondItem="wad-qQ-ddA" secondAttribute="width" multiplier="0.12" id="kLg-Rb-q9q"/>
+                            <constraint firstItem="b8e-WO-Emf" firstAttribute="height" secondItem="vSt-N4-Wyw" secondAttribute="height" multiplier="0.05" id="oBw-RW-5Ui"/>
                             <constraint firstItem="oLw-5z-Hox" firstAttribute="top" secondItem="Qdr-lY-T4x" secondAttribute="bottom" constant="1.5" id="pUM-u3-Ctx"/>
                             <constraint firstItem="SiJ-7X-X2B" firstAttribute="top" secondItem="T3G-Di-LbG" secondAttribute="top" id="pfz-h7-e1Z"/>
+                            <constraint firstItem="b8e-WO-Emf" firstAttribute="trailing" secondItem="T3G-Di-LbG" secondAttribute="trailingMargin" id="qh5-zB-3Ke"/>
                             <constraint firstAttribute="bottom" secondItem="Gmc-bB-oTt" secondAttribute="bottom" id="rKQ-dl-2dy"/>
                             <constraint firstItem="OMq-We-d5u" firstAttribute="top" secondItem="Qdr-lY-T4x" secondAttribute="bottom" constant="1.5" id="sok-aW-up1"/>
                             <constraint firstItem="jg8-Az-M9i" firstAttribute="trailing" secondItem="w7k-aX-Tpz" secondAttribute="trailing" id="tjN-Il-cOI"/>
@@ -393,5 +412,6 @@
     </scenes>
     <resources>
         <image name="Artboard 15.png" width="1125.25" height="2436.25"/>
+        <image name="person.circle.fill" catalog="system" width="128" height="121"/>
     </resources>
 </document>
