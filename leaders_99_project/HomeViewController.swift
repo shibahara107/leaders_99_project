@@ -24,10 +24,14 @@ class HomeViewController: UIViewController {
     @IBOutlet var currentUserNameLabel: UILabel!
     @IBOutlet var currentUserEmailLabel: UILabel!
     @IBOutlet var currentUserIDLabel: UILabel!
+    
+    let backgroundColor = UIColor(red: 244/255.0, green: 244/255.0, blue: 244/255.0, alpha: 1.0)
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        view.backgroundColor = backgroundColor
         
         print("Home")
         

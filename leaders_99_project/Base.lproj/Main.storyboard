@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="O1b-kI-QxT">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3qc-Fc-Vs6">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
@@ -123,17 +123,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMq-We-d5u">
-                                <rect key="frame" x="125" y="433" width="38" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Inbox"/>
-                                <connections>
-                                    <action selector="inboxButtonTapped:" destination="3qc-Fc-Vs6" eventType="touchUpInside" id="PId-l6-5lU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLw-5z-Hox">
-                                <rect key="frame" x="252" y="433" width="37" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qdr-lY-T4x" userLabel="VerticalCriterionView2">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="564.5"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gmc-bB-oTt" userLabel="HorizontalCriterionViewRight">
+                                <rect key="frame" x="0.0" y="0.0" width="45" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SiJ-7X-X2B" userLabel="HorizontalCriterionViewLeft">
+                                <rect key="frame" x="369" y="0.0" width="45" height="896"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artboard 15.png" translatesAutoresizingMaskIntoConstraints="NO" id="jg8-Az-M9i">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oLw-5z-Hox">
+                                <rect key="frame" x="247.5" y="566" width="120.5" height="53.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="oLw-5z-Hox" secondAttribute="height" multiplier="121:54" id="bmK-vt-7nr"/>
+                                </constraints>
                                 <state key="normal" title="Write"/>
                                 <connections>
                                     <action selector="writeButtonTapped:" destination="3qc-Fc-Vs6" eventType="touchUpInside" id="iJb-un-DcF"/>
@@ -160,8 +169,63 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OMq-We-d5u">
+                                <rect key="frame" x="47" y="566" width="161" height="53.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OMq-We-d5u" secondAttribute="height" multiplier="3:1" id="rbJ-Na-xLC"/>
+                                </constraints>
+                                <state key="normal" title="Inbox"/>
+                                <connections>
+                                    <action selector="inboxButtonTapped:" destination="3qc-Fc-Vs6" eventType="touchUpInside" id="PId-l6-5lU"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vSt-N4-Wyw" userLabel="VerticalCriterionView">
+                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="jm6-qD-xJn"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wad-qQ-ddA" userLabel="HorizontalCriterionView">
+                                <rect key="frame" x="20" y="44" width="374" height="0.0"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="hEQ-NR-fDZ"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.95686274509803915" green="0.95686274509803915" blue="0.95686274509803915" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Gmc-bB-oTt" firstAttribute="leading" secondItem="T3G-Di-LbG" secondAttribute="leading" id="1ci-MT-Mpm"/>
+                            <constraint firstItem="Qdr-lY-T4x" firstAttribute="leading" secondItem="T3G-Di-LbG" secondAttribute="leading" id="27d-WN-1i8"/>
+                            <constraint firstAttribute="trailing" secondItem="Qdr-lY-T4x" secondAttribute="trailing" id="5A0-G2-kYb"/>
+                            <constraint firstItem="Gmc-bB-oTt" firstAttribute="top" secondItem="T3G-Di-LbG" secondAttribute="top" id="8nZ-OQ-FB9"/>
+                            <constraint firstItem="vSt-N4-Wyw" firstAttribute="top" secondItem="T3G-Di-LbG" secondAttribute="top" id="BGF-FF-0e2"/>
+                            <constraint firstAttribute="bottom" secondItem="vSt-N4-Wyw" secondAttribute="bottom" id="Ged-Ja-cdR"/>
+                            <constraint firstItem="Gmc-bB-oTt" firstAttribute="width" secondItem="wad-qQ-ddA" secondAttribute="width" multiplier="0.12" id="Jvh-Cf-vUB"/>
+                            <constraint firstItem="Qdr-lY-T4x" firstAttribute="top" secondItem="T3G-Di-LbG" secondAttribute="top" id="Kp5-tQ-iyZ"/>
+                            <constraint firstAttribute="trailing" secondItem="SiJ-7X-X2B" secondAttribute="trailing" id="U4U-1H-J4O"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wad-qQ-ddA" secondAttribute="trailing" id="WSC-oQ-rLP"/>
+                            <constraint firstItem="oLw-5z-Hox" firstAttribute="height" secondItem="vSt-N4-Wyw" secondAttribute="height" multiplier="0.06" id="aMF-vl-mgn"/>
+                            <constraint firstItem="jg8-Az-M9i" firstAttribute="top" secondItem="T3G-Di-LbG" secondAttribute="top" id="aTU-Cf-s25"/>
+                            <constraint firstItem="wad-qQ-ddA" firstAttribute="top" secondItem="T3G-Di-LbG" secondAttribute="topMargin" id="blx-Vw-DJx"/>
+                            <constraint firstItem="wad-qQ-ddA" firstAttribute="leading" secondItem="T3G-Di-LbG" secondAttribute="leadingMargin" id="eOd-Vl-uRH"/>
+                            <constraint firstItem="Qdr-lY-T4x" firstAttribute="height" secondItem="vSt-N4-Wyw" secondAttribute="height" multiplier="0.63" id="hiH-eB-K6Y"/>
+                            <constraint firstItem="SiJ-7X-X2B" firstAttribute="leading" secondItem="oLw-5z-Hox" secondAttribute="trailing" constant="1" id="hpt-xT-pnN"/>
+                            <constraint firstItem="OMq-We-d5u" firstAttribute="height" secondItem="vSt-N4-Wyw" secondAttribute="height" multiplier="0.06" id="ido-k5-qcN"/>
+                            <constraint firstItem="jg8-Az-M9i" firstAttribute="leading" secondItem="w7k-aX-Tpz" secondAttribute="leading" id="jSq-SU-xIE"/>
+                            <constraint firstItem="SiJ-7X-X2B" firstAttribute="width" secondItem="wad-qQ-ddA" secondAttribute="width" multiplier="0.12" id="kLg-Rb-q9q"/>
+                            <constraint firstItem="oLw-5z-Hox" firstAttribute="top" secondItem="Qdr-lY-T4x" secondAttribute="bottom" constant="1.5" id="pUM-u3-Ctx"/>
+                            <constraint firstItem="SiJ-7X-X2B" firstAttribute="top" secondItem="T3G-Di-LbG" secondAttribute="top" id="pfz-h7-e1Z"/>
+                            <constraint firstAttribute="bottom" secondItem="Gmc-bB-oTt" secondAttribute="bottom" id="rKQ-dl-2dy"/>
+                            <constraint firstItem="OMq-We-d5u" firstAttribute="top" secondItem="Qdr-lY-T4x" secondAttribute="bottom" constant="1.5" id="sok-aW-up1"/>
+                            <constraint firstItem="jg8-Az-M9i" firstAttribute="trailing" secondItem="w7k-aX-Tpz" secondAttribute="trailing" id="tjN-Il-cOI"/>
+                            <constraint firstAttribute="bottom" secondItem="jg8-Az-M9i" secondAttribute="bottom" id="uMZ-4C-Cvv"/>
+                            <constraint firstAttribute="bottom" secondItem="SiJ-7X-X2B" secondAttribute="bottom" id="ucF-OI-qZu"/>
+                            <constraint firstItem="OMq-We-d5u" firstAttribute="leading" secondItem="Gmc-bB-oTt" secondAttribute="trailing" constant="2" id="vPU-5m-OEI"/>
+                            <constraint firstItem="OMq-We-d5u" firstAttribute="leading" secondItem="Gmc-bB-oTt" secondAttribute="trailing" constant="2" id="xIn-XJ-pdW"/>
+                            <constraint firstItem="vSt-N4-Wyw" firstAttribute="leading" secondItem="T3G-Di-LbG" secondAttribute="leading" id="zbJ-gX-srB"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="w7k-aX-Tpz"/>
                     </view>
                     <connections>
@@ -327,4 +391,7 @@
             <point key="canvasLocation" x="2288" y="-161"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Artboard 15.png" width="1125.25" height="2436.25"/>
+    </resources>
 </document>

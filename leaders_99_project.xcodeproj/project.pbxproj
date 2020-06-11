@@ -14,6 +14,15 @@
 		D10525A9247537670007309A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10525A8247537670007309A /* LogInViewController.swift */; };
 		D10B3129247FCA5300BEB8FC /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10B3127247FCA5300BEB8FC /* CustomTableViewCell.swift */; };
 		D10B312A247FCA5300BEB8FC /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D10B3128247FCA5300BEB8FC /* CustomTableViewCell.xib */; };
+		D12DDF5524921A4E00FC37DE /* Artboard 11.png in Resources */ = {isa = PBXBuildFile; fileRef = D12DDF5024921A4E00FC37DE /* Artboard 11.png */; };
+		D12DDF5624921A4E00FC37DE /* Artboard 4 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = D12DDF5124921A4E00FC37DE /* Artboard 4 copy.png */; };
+		D12DDF5724921A4E00FC37DE /* Artboard 8.png in Resources */ = {isa = PBXBuildFile; fileRef = D12DDF5224921A4E00FC37DE /* Artboard 8.png */; };
+		D12DDF5824921A4E00FC37DE /* Artboard 3.png in Resources */ = {isa = PBXBuildFile; fileRef = D12DDF5324921A4E00FC37DE /* Artboard 3.png */; };
+		D12DDF5924921A4E00FC37DE /* Artboard 7.png in Resources */ = {isa = PBXBuildFile; fileRef = D12DDF5424921A4E00FC37DE /* Artboard 7.png */; };
+		D12DDF5E24923EC600FC37DE /* Artboard 14.png in Resources */ = {isa = PBXBuildFile; fileRef = D12DDF5A24923EC600FC37DE /* Artboard 14.png */; };
+		D12DDF5F24923EC600FC37DE /* Artboard 12.png in Resources */ = {isa = PBXBuildFile; fileRef = D12DDF5B24923EC600FC37DE /* Artboard 12.png */; };
+		D12DDF6024923EC600FC37DE /* Artboard 15.png in Resources */ = {isa = PBXBuildFile; fileRef = D12DDF5C24923EC600FC37DE /* Artboard 15.png */; };
+		D12DDF6124923EC600FC37DE /* Artboard 13.png in Resources */ = {isa = PBXBuildFile; fileRef = D12DDF5D24923EC600FC37DE /* Artboard 13.png */; };
 		D179B0B524790C3100654EF1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D179B0B424790C3000654EF1 /* TableViewController.swift */; };
 		D19DB38A2487E7C7009D78E0 /* SecondCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19DB3882487E7C7009D78E0 /* SecondCustomTableViewCell.swift */; };
 		D19DB38B2487E7C7009D78E0 /* SecondCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D19DB3892487E7C7009D78E0 /* SecondCustomTableViewCell.xib */; };
@@ -62,6 +71,15 @@
 		D10525A8247537670007309A /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		D10B3127247FCA5300BEB8FC /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		D10B3128247FCA5300BEB8FC /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		D12DDF5024921A4E00FC37DE /* Artboard 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 11.png"; sourceTree = "<group>"; };
+		D12DDF5124921A4E00FC37DE /* Artboard 4 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 4 copy.png"; sourceTree = "<group>"; };
+		D12DDF5224921A4E00FC37DE /* Artboard 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 8.png"; sourceTree = "<group>"; };
+		D12DDF5324921A4E00FC37DE /* Artboard 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 3.png"; sourceTree = "<group>"; };
+		D12DDF5424921A4E00FC37DE /* Artboard 7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 7.png"; sourceTree = "<group>"; };
+		D12DDF5A24923EC600FC37DE /* Artboard 14.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 14.png"; sourceTree = "<group>"; };
+		D12DDF5B24923EC600FC37DE /* Artboard 12.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 12.png"; sourceTree = "<group>"; };
+		D12DDF5C24923EC600FC37DE /* Artboard 15.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 15.png"; sourceTree = "<group>"; };
+		D12DDF5D24923EC600FC37DE /* Artboard 13.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 13.png"; sourceTree = "<group>"; };
 		D14AB25EBDC1BC674B4EDB97 /* Pods-leaders_99_project-leaders_99_projectUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-leaders_99_project-leaders_99_projectUITests.debug.xcconfig"; path = "Target Support Files/Pods-leaders_99_project-leaders_99_projectUITests/Pods-leaders_99_project-leaders_99_projectUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D179B0B424790C3000654EF1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		D19DB3882487E7C7009D78E0 /* SecondCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCustomTableViewCell.swift; sourceTree = "<group>"; };
@@ -136,10 +154,27 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D12DDF4F24921A4E00FC37DE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				D12DDF5024921A4E00FC37DE /* Artboard 11.png */,
+				D12DDF5124921A4E00FC37DE /* Artboard 4 copy.png */,
+				D12DDF5224921A4E00FC37DE /* Artboard 8.png */,
+				D12DDF5324921A4E00FC37DE /* Artboard 3.png */,
+				D12DDF5424921A4E00FC37DE /* Artboard 7.png */,
+				D12DDF5B24923EC600FC37DE /* Artboard 12.png */,
+				D12DDF5D24923EC600FC37DE /* Artboard 13.png */,
+				D12DDF5A24923EC600FC37DE /* Artboard 14.png */,
+				D12DDF5C24923EC600FC37DE /* Artboard 15.png */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		D1F68E542473E2B6004056EF = {
 			isa = PBXGroup;
 			children = (
 				D1F68E5F2473E2B6004056EF /* leaders_99_project */,
+				D12DDF4F24921A4E00FC37DE /* Assets */,
 				D1F68E762473E2B9004056EF /* leaders_99_projectTests */,
 				D1F68E812473E2B9004056EF /* leaders_99_projectUITests */,
 				D1F68E5E2473E2B6004056EF /* Products */,
@@ -310,10 +345,19 @@
 			buildActionMask = 2147483647;
 			files = (
 				D19DB38B2487E7C7009D78E0 /* SecondCustomTableViewCell.xib in Resources */,
+				D12DDF5F24923EC600FC37DE /* Artboard 12.png in Resources */,
 				D1F68E6D2473E2B8004056EF /* LaunchScreen.storyboard in Resources */,
 				D1F68E912473E31D004056EF /* GoogleService-Info.plist in Resources */,
+				D12DDF5524921A4E00FC37DE /* Artboard 11.png in Resources */,
+				D12DDF6024923EC600FC37DE /* Artboard 15.png in Resources */,
+				D12DDF6124923EC600FC37DE /* Artboard 13.png in Resources */,
+				D12DDF5624921A4E00FC37DE /* Artboard 4 copy.png in Resources */,
 				D1F68E6A2473E2B8004056EF /* Assets.xcassets in Resources */,
+				D12DDF5E24923EC600FC37DE /* Artboard 14.png in Resources */,
 				D10B312A247FCA5300BEB8FC /* CustomTableViewCell.xib in Resources */,
+				D12DDF5924921A4E00FC37DE /* Artboard 7.png in Resources */,
+				D12DDF5824921A4E00FC37DE /* Artboard 3.png in Resources */,
+				D12DDF5724921A4E00FC37DE /* Artboard 8.png in Resources */,
 				D1F68E682473E2B6004056EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
