@@ -14,6 +14,7 @@
 		D10525A9247537670007309A /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10525A8247537670007309A /* LogInViewController.swift */; };
 		D10B3129247FCA5300BEB8FC /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10B3127247FCA5300BEB8FC /* CustomTableViewCell.swift */; };
 		D10B312A247FCA5300BEB8FC /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D10B3128247FCA5300BEB8FC /* CustomTableViewCell.xib */; };
+		D114B9672493F7C2003BDAD2 /* Artboard 16 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = D114B9662493F7C2003BDAD2 /* Artboard 16 copy.png */; };
 		D12DDF5524921A4E00FC37DE /* Artboard 11.png in Resources */ = {isa = PBXBuildFile; fileRef = D12DDF5024921A4E00FC37DE /* Artboard 11.png */; };
 		D12DDF5624921A4E00FC37DE /* Artboard 4 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = D12DDF5124921A4E00FC37DE /* Artboard 4 copy.png */; };
 		D12DDF5724921A4E00FC37DE /* Artboard 8.png in Resources */ = {isa = PBXBuildFile; fileRef = D12DDF5224921A4E00FC37DE /* Artboard 8.png */; };
@@ -72,6 +73,7 @@
 		D10525A8247537670007309A /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		D10B3127247FCA5300BEB8FC /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
 		D10B3128247FCA5300BEB8FC /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
+		D114B9662493F7C2003BDAD2 /* Artboard 16 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 16 copy.png"; sourceTree = "<group>"; };
 		D12DDF5024921A4E00FC37DE /* Artboard 11.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 11.png"; sourceTree = "<group>"; };
 		D12DDF5124921A4E00FC37DE /* Artboard 4 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 4 copy.png"; sourceTree = "<group>"; };
 		D12DDF5224921A4E00FC37DE /* Artboard 8.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 8.png"; sourceTree = "<group>"; };
@@ -168,6 +170,7 @@
 				D12DDF5D24923EC600FC37DE /* Artboard 13.png */,
 				D12DDF5A24923EC600FC37DE /* Artboard 14.png */,
 				D17EB9B624925F0C0073C3BF /* Artboard 16.png */,
+				D114B9662493F7C2003BDAD2 /* Artboard 16 copy.png */,
 				D12DDF5C24923EC600FC37DE /* Artboard 15.png */,
 			);
 			path = Assets;
@@ -362,6 +365,7 @@
 				D12DDF5924921A4E00FC37DE /* Artboard 7.png in Resources */,
 				D12DDF5824921A4E00FC37DE /* Artboard 3.png in Resources */,
 				D12DDF5724921A4E00FC37DE /* Artboard 8.png in Resources */,
+				D114B9672493F7C2003BDAD2 /* Artboard 16 copy.png in Resources */,
 				D1F68E682473E2B6004056EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

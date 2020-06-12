@@ -14,7 +14,7 @@ class MessageViewController: UIViewController {
     var fromName: String!
     var toName: String!
     
-    @IBOutlet var messageContentLabel: UILabel!
+    @IBOutlet var messageContentView: UITextView!
     @IBOutlet var fromNameLabel: UILabel!
     @IBOutlet var toNameLabel: UILabel!
 
@@ -22,7 +22,7 @@ class MessageViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
-        messageContentLabel.text = messageContent
+        messageContentView.text = messageContent
         fromNameLabel.text = fromName
         toNameLabel.text = toName
         
