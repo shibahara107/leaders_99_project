@@ -301,6 +301,40 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Artboard 16.png" translatesAutoresizingMaskIntoConstraints="NO" id="fVI-r8-4V6">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uZA-tB-f2E" userLabel="VerticalCriterionView">
+                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" id="hlG-Oc-CTs"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVU-Qh-Q37" userLabel="BottomCriterionView">
+                                <rect key="frame" x="20" y="683" width="374" height="179"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wu9-EO-drP" userLabel="SecondTopCriterionView">
+                                <rect key="frame" x="20" y="44" width="374" height="645"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K5M-6J-g3Y" userLabel="TopCriterionView">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rjb-Am-ueN" userLabel="HorizontalCriterionView">
+                                <rect key="frame" x="20" y="44" width="374" height="0.0"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" id="AGw-eJ-eBN"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsd-W8-K9k" userLabel="RightCriterionView">
+                                <rect key="frame" x="375.5" y="44" width="18.5" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsf-bi-vGQ" userLabel="LeftCriterionView">
+                                <rect key="frame" x="20" y="44" width="33.5" height="818"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="From" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bho-Kz-AGv">
                                 <rect key="frame" x="56" y="690" width="297" height="33"/>
                                 <constraints>
@@ -340,7 +374,7 @@
                                 <color key="tintColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" backgroundImage="paperplane" catalog="system"/>
                                 <connections>
-                                    <action selector="pushCloseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nSA-Pl-c8q"/>
+                                    <action selector="tappedSendButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="s4c-TL-fxH"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aq0-hy-wZT">
@@ -351,43 +385,9 @@
                                 <color key="tintColor" systemColor="separatorColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.28999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
                                 <state key="normal" backgroundImage="clear" catalog="system"/>
                                 <connections>
-                                    <action selector="pushCloseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jro-st-U0P"/>
+                                    <action selector="pushCloseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Nuj-LZ-lJK"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uZA-tB-f2E" userLabel="VerticalCriterionView">
-                                <rect key="frame" x="0.0" y="0.0" width="0.0" height="896"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" id="hlG-Oc-CTs"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wVU-Qh-Q37" userLabel="BottomCriterionView">
-                                <rect key="frame" x="20" y="683" width="374" height="179"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Wu9-EO-drP" userLabel="SecondTopCriterionView">
-                                <rect key="frame" x="20" y="44" width="374" height="645"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="K5M-6J-g3Y" userLabel="TopCriterionView">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="85"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rjb-Am-ueN" userLabel="HorizontalCriterionView">
-                                <rect key="frame" x="20" y="44" width="374" height="0.0"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" id="AGw-eJ-eBN"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xsd-W8-K9k" userLabel="RightCriterionView">
-                                <rect key="frame" x="375.5" y="44" width="18.5" height="818"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bsf-bi-vGQ" userLabel="LeftCriterionView">
-                                <rect key="frame" x="20" y="44" width="33.5" height="818"/>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -469,7 +469,6 @@
                                 <state key="normal" title="Back"/>
                                 <connections>
                                     <action selector="pushCloseButton:" destination="PY6-j3-Ymf" eventType="touchUpInside" id="H5v-5Q-fhZ"/>
-                                    <action selector="pushCloseButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="iJf-cr-7Xo"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rUb-FB-OAI">

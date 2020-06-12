@@ -9,10 +9,11 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
+import PKHUD
 
 class ViewController: UIViewController {
     
-//    @IBOutlet var textView: UITextView!
+    //    @IBOutlet var textView: UITextView!
     @IBOutlet var fromNameInputField: UITextField!
     @IBOutlet var messageInputView: UITextView!
     
@@ -48,14 +49,14 @@ class ViewController: UIViewController {
         
         dateFormatter.dateFormat = "yyyyMMddHHmm"
         
-//        databaseReference.observe(.childAdded, with: { snapshot in
-//            if let obj = snapshot.value as? [String: AnyObject], let toName = obj["toName"] as? String, let toID = obj["toID"] as? String, let fromName = obj["fromName"] as? String, let message = obj["message"] {
-//                let currentText = self.textView.text
-//                if toID == self.currentUserID {
-//                    self.textView.text = (currentText ?? "") + "\(fromName) : \(message)"
-//                }
-//            }
-//        })
+        //        databaseReference.observe(.childAdded, with: { snapshot in
+        //            if let obj = snapshot.value as? [String: AnyObject], let toName = obj["toName"] as? String, let toID = obj["toID"] as? String, let fromName = obj["fromName"] as? String, let message = obj["message"] {
+        //                let currentText = self.textView.text
+        //                if toID == self.currentUserID {
+        //                    self.textView.text = (currentText ?? "") + "\(fromName) : \(message)"
+        //                }
+        //            }
+        //        })
         
     }
     
@@ -69,11 +70,42 @@ class ViewController: UIViewController {
             toIDInputField.text = ""
             messageInputView.text = ""
             print(sentDate)
+            
+            HUD.flash(.labeledSuccess(title: "Sent", subtitle: ""), delay: 1.0)
+            let when = DispatchTime.now()
+            DispatchQueue.main.asyncAfter(deadline: when + 2.0) {
+                let storyboard = UIStoryboard(name: "Main", bundle: nil)
+                let viewController = storyboard.instantiateViewController(identifier: "HomeViewController")
+                
+                viewController.modalPresentationStyle = .fullScreen
+                viewController.modalTransitionStyle = .crossDissolve
+                self.present(viewController, animated: true, completion: nil)
+                
+            }
         }
     }
     
     @IBAction func pushCloseButton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+        
+        let alert = UIAlertController(title: "Discard?", message: "All text will be deleted", preferredStyle:  UIAlertController.Style.alert)
+                
+        let defaultAction: UIAlertAction = UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler:{
+            (action: UIAlertAction!) -> Void in
+            print("Discard")
+            
+            self.dismiss(animated: true, completion: nil)
+            
+        })
+        
+        let cancelAction: UIAlertAction = UIAlertAction(title: "Cancel", style: UIAlertAction.Style.cancel, handler:{
+            (action: UIAlertAction!) -> Void in
+            print("Cancel")
+        })
+        
+        alert.addAction(cancelAction)
+        alert.addAction(defaultAction)
+        
+        present(alert, animated: true, completion: nil)
     }
     
 }
