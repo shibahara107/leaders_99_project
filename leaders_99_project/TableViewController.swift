@@ -128,18 +128,21 @@ class TableViewController: UITableViewController {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let messageViewController = storyboard.instantiateViewController(identifier: "MessageViewController") as! MessageViewController
         
-        var messageContent = messageArray[indexPath.row] as! [String: AnyObject]
+        let messageContent = messageArray[indexPath.row] as! [String: AnyObject]
         let message = messageContent["message"] as? String
         let fromName = messageContent["name"] as? String
+        let fromID = messageContent["fromID"] as? String
         let toName = messageContent["toName"] as? String
         
         messageViewController.messageContent = message
         messageViewController.fromName = fromName
+        messageViewController.fromID = fromID
         messageViewController.toName = toName
         
         print(messageArray[indexPath.row] as! [String: AnyObject])
         
         messageViewController.modalPresentationStyle = .fullScreen
+        messageViewController.modalTransitionStyle = .crossDissolve
         self.present(messageViewController, animated: true, completion: nil)
     }
     

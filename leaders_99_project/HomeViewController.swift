@@ -46,6 +46,9 @@ class HomeViewController: UIViewController {
         currentUserEmailLabel.text = "userEmail: \(currentUserEmail ?? "")"
         currentUserIDLabel.text = "userID: \(currentUserID ?? "")"
         
+        currentUserNameLabel.isHidden = true
+        currentUserEmailLabel.isHidden = true
+        currentUserIDLabel.isHidden = true
         
     }
     
