@@ -131,8 +131,14 @@ class SignUpViewController: UIViewController {
         }
     }
     
-    //    @IBAction func pushCloseButton(_ sender: Any) {
-    //        self.dismiss(animated: true, completion: nil)
-    //    }
+        @IBAction func pushLogInButton(_ sender: Any) {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewController = storyboard.instantiateViewController(identifier: "LogInViewController")
+            
+            viewController.modalPresentationStyle = .fullScreen
+            viewController.modalTransitionStyle = .crossDissolve
+            self.present(viewController, animated: true, completion: nil)
+            print("Log In")
+        }
     
 }
