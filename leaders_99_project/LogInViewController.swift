@@ -8,7 +8,7 @@
 
 import UIKit
 import FirebaseAuth
-import FirebaseAuth
+import FirebaseDatabase
 import PKHUD
 
 class LogInViewController: UIViewController {
@@ -16,32 +16,48 @@ class LogInViewController: UIViewController {
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passTextField: UITextField!
     
+    let currentUserEmail = Auth.auth().currentUser?.email
+    
     let backgroundColor = UIColor(red: 244/255.0, green: 244/255.0, blue: 244/255.0, alpha: 1.0)
+    
+    var databaseReference: DatabaseReference!
+    
+    let delegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
+    
+    @IBOutlet var backgroundImageView: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-  
-        self.overrideUserInterfaceStyle = .light
-//        view.backgroundColor = backgroundColor
         
+        backgroundImageView.image = UIImage(named: delegate.backgroundImageString)
+        self.overrideUserInterfaceStyle = .light
+        
+        databaseReference = Database.database().reference()
+        
+        if Auth.auth().currentUser != nil {
+            emailTextField.text = currentUserEmail
+        }
+        
+        passTextField.isSecureTextEntry = true
+
         print("Log In")
         
         emailTextField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         passTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         
-//        let emailPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: self.emailTextField.frame.height))
-//        let passPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: self.passTextField.frame.height))
-//
-//        emailTextField.layer.borderWidth = 0.3
-//        emailTextField.layer.cornerRadius = 20.0
-//        emailTextField.leftView = emailPaddingView
-//        emailTextField.leftViewMode = UITextField.ViewMode.always
-//
-//        passTextField.layer.borderWidth = 0.3
-//        passTextField.layer.cornerRadius = 20.0
-//        passTextField.leftView = passPaddingView
-//        passTextField.leftViewMode = UITextField.ViewMode.always
+        //        let emailPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: self.emailTextField.frame.height))
+        //        let passPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: self.passTextField.frame.height))
+        //
+        //        emailTextField.layer.borderWidth = 0.3
+        //        emailTextField.layer.cornerRadius = 20.0
+        //        emailTextField.leftView = emailPaddingView
+        //        emailTextField.leftViewMode = UITextField.ViewMode.always
+        //
+        //        passTextField.layer.borderWidth = 0.3
+        //        passTextField.layer.cornerRadius = 20.0
+        //        passTextField.leftView = passPaddingView
+        //        passTextField.leftViewMode = UITextField.ViewMode.always
     }
     
     /*
@@ -93,7 +109,7 @@ class LogInViewController: UIViewController {
                         viewController.modalTransitionStyle = .crossDissolve
                         self.present(viewController, animated: true, completion: nil)
                         
-//                        self.present((self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController), animated: true, completion: nil)
+                        //                        self.present((self.storyboard?.instantiateViewController(withIdentifier: "ViewController") as! ViewController), animated: true, completion: nil)
                     }
                     
                 }
@@ -101,8 +117,15 @@ class LogInViewController: UIViewController {
         }
     }
     
-    @IBAction func pushCloseButton(_ sender: Any) {
-        self.dismiss(animated: true, completion: nil)
+    
+    @IBAction func pushSignInButton(_ sender: Any) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let viewController = storyboard.instantiateViewController(identifier: "SignUpViewController")
+        
+        viewController.modalPresentationStyle = .fullScreen
+        viewController.modalTransitionStyle = .crossDissolve
+        self.present(viewController, animated: true, completion: nil)
+        print("Don't have an account")
     }
     
 }

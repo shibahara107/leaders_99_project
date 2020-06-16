@@ -17,6 +17,10 @@ class SignUpViewController: UIViewController {
     @IBOutlet var emailTextField: UITextField!
     @IBOutlet var passTextField: UITextField!
     
+    let delegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
+
+    @IBOutlet var backgroundImageView: UIImageView!
+    
     let backgroundColor = UIColor(red: 244/255.0, green: 244/255.0, blue: 244/255.0, alpha: 1.0)
     
     override func viewDidLoad() {
@@ -26,11 +30,15 @@ class SignUpViewController: UIViewController {
         self.overrideUserInterfaceStyle = .light
 //        view.backgroundColor = backgroundColor
         
+        backgroundImageView.image = UIImage(named: delegate.backgroundImageString)
+        
         print("Sign Up")
         
         nameTextField.attributedPlaceholder = NSAttributedString(string: "Name", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         emailTextField.attributedPlaceholder = NSAttributedString(string: "Email", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         passTextField.attributedPlaceholder = NSAttributedString(string: "Password", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+        
+        passTextField.isSecureTextEntry = true
         
 //        let namePaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: self.nameTextField.frame.height))
 //        let emailPaddingView = UIView(frame: CGRect(x: 0, y: 0, width: 15, height: self.emailTextField.frame.height))
@@ -136,14 +144,9 @@ class SignUpViewController: UIViewController {
         }
     }
     
-        @IBAction func pushLogInButton(_ sender: Any) {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let viewController = storyboard.instantiateViewController(identifier: "LogInViewController")
-            
-            viewController.modalPresentationStyle = .fullScreen
-            viewController.modalTransitionStyle = .crossDissolve
-            self.present(viewController, animated: true, completion: nil)
-            print("Log In")
-        }
+    @IBAction func pushCloseButton(_ sender: Any) {
+        print("Already have an account")
+        self.dismiss(animated: true, completion: nil)
+    }
     
 }

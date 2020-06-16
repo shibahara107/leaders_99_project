@@ -27,12 +27,17 @@ class HomeViewController: UIViewController {
     @IBOutlet var currentUserIDLabel: UILabel!
     
     let backgroundColor = UIColor(red: 244/255.0, green: 244/255.0, blue: 244/255.0, alpha: 1.0)
+    
+    let delegate : AppDelegate = UIApplication.shared.delegate as! AppDelegate
+
+     @IBOutlet var frameImageView: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
         self.overrideUserInterfaceStyle = .light
+        frameImageView.image = UIImage(named: delegate.frameImageString)
         view.backgroundColor = backgroundColor
         
         print("Home")

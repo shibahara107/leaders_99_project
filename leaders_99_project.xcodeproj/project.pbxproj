@@ -30,6 +30,12 @@
 		D19DB38A2487E7C7009D78E0 /* SecondCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19DB3882487E7C7009D78E0 /* SecondCustomTableViewCell.swift */; };
 		D19DB38B2487E7C7009D78E0 /* SecondCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D19DB3892487E7C7009D78E0 /* SecondCustomTableViewCell.xib */; };
 		D1BF2C682483D2D100916FF4 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BF2C672483D2D100916FF4 /* MessageViewController.swift */; };
+		D1DD6F1024987DF300D5A069 /* Artboard 27(1).png in Resources */ = {isa = PBXBuildFile; fileRef = D1DD6F0F24987DF300D5A069 /* Artboard 27(1).png */; };
+		D1DD6F1424987DFA00D5A069 /* Artboard 27 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = D1DD6F1124987DFA00D5A069 /* Artboard 27 copy.png */; };
+		D1DD6F1524987DFA00D5A069 /* Artboard 27 copy 3.png in Resources */ = {isa = PBXBuildFile; fileRef = D1DD6F1224987DFA00D5A069 /* Artboard 27 copy 3.png */; };
+		D1DD6F1624987DFA00D5A069 /* Artboard 27 copy 2.png in Resources */ = {isa = PBXBuildFile; fileRef = D1DD6F1324987DFA00D5A069 /* Artboard 27 copy 2.png */; };
+		D1DD6F1924987EFA00D5A069 /* Artboard 33.png in Resources */ = {isa = PBXBuildFile; fileRef = D1DD6F1724987EFA00D5A069 /* Artboard 33.png */; };
+		D1DD6F1A24987EFA00D5A069 /* Artboard 34.png in Resources */ = {isa = PBXBuildFile; fileRef = D1DD6F1824987EFA00D5A069 /* Artboard 34.png */; };
 		D1E193742495298A00764328 /* Artboard 22.png in Resources */ = {isa = PBXBuildFile; fileRef = D1E193732495298A00764328 /* Artboard 22.png */; };
 		D1E1937924952B3D00764328 /* Artboard 23.png in Resources */ = {isa = PBXBuildFile; fileRef = D1E1937524952B3D00764328 /* Artboard 23.png */; };
 		D1E1937A24952B3D00764328 /* Artboard 24.png in Resources */ = {isa = PBXBuildFile; fileRef = D1E1937624952B3D00764328 /* Artboard 24.png */; };
@@ -96,12 +102,18 @@
 		D19DB3882487E7C7009D78E0 /* SecondCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCustomTableViewCell.swift; sourceTree = "<group>"; };
 		D19DB3892487E7C7009D78E0 /* SecondCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondCustomTableViewCell.xib; sourceTree = "<group>"; };
 		D1BF2C672483D2D100916FF4 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
+		D1DD6F0F24987DF300D5A069 /* Artboard 27(1).png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 27(1).png"; sourceTree = "<group>"; };
+		D1DD6F1124987DFA00D5A069 /* Artboard 27 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 27 copy.png"; sourceTree = "<group>"; };
+		D1DD6F1224987DFA00D5A069 /* Artboard 27 copy 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 27 copy 3.png"; sourceTree = "<group>"; };
+		D1DD6F1324987DFA00D5A069 /* Artboard 27 copy 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 27 copy 2.png"; sourceTree = "<group>"; };
+		D1DD6F1724987EFA00D5A069 /* Artboard 33.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 33.png"; sourceTree = "<group>"; };
+		D1DD6F1824987EFA00D5A069 /* Artboard 34.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 34.png"; sourceTree = "<group>"; };
 		D1E193732495298A00764328 /* Artboard 22.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 22.png"; sourceTree = "<group>"; };
 		D1E1937524952B3D00764328 /* Artboard 23.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 23.png"; sourceTree = "<group>"; };
 		D1E1937624952B3D00764328 /* Artboard 24.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 24.png"; sourceTree = "<group>"; };
 		D1E1937724952B3D00764328 /* Artboard 25.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 25.png"; sourceTree = "<group>"; };
 		D1E1937824952B3D00764328 /* Artboard 26.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 26.png"; sourceTree = "<group>"; };
-		D1F68E5D2473E2B6004056EF /* leaders_99_project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = leaders_99_project.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D1F68E5D2473E2B6004056EF /* Airmes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airmes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D1F68E602473E2B6004056EF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D1F68E622473E2B6004056EF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		D1F68E642473E2B6004056EF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -190,6 +202,12 @@
 				D1E1937724952B3D00764328 /* Artboard 25.png */,
 				D1E1937824952B3D00764328 /* Artboard 26.png */,
 				D176F2DA2495DAE3005A711D /* Artboard 27.png */,
+				D1DD6F0F24987DF300D5A069 /* Artboard 27(1).png */,
+				D1DD6F1324987DFA00D5A069 /* Artboard 27 copy 2.png */,
+				D1DD6F1224987DFA00D5A069 /* Artboard 27 copy 3.png */,
+				D1DD6F1124987DFA00D5A069 /* Artboard 27 copy.png */,
+				D1DD6F1724987EFA00D5A069 /* Artboard 33.png */,
+				D1DD6F1824987EFA00D5A069 /* Artboard 34.png */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -210,7 +228,7 @@
 		D1F68E5E2473E2B6004056EF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D1F68E5D2473E2B6004056EF /* leaders_99_project.app */,
+				D1F68E5D2473E2B6004056EF /* Airmes.app */,
 				D1F68E732473E2B9004056EF /* leaders_99_projectTests.xctest */,
 				D1F68E7E2473E2B9004056EF /* leaders_99_projectUITests.xctest */,
 			);
@@ -278,7 +296,7 @@
 			);
 			name = leaders_99_project;
 			productName = leaders_99_project;
-			productReference = D1F68E5D2473E2B6004056EF /* leaders_99_project.app */;
+			productReference = D1F68E5D2473E2B6004056EF /* Airmes.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D1F68E722473E2B9004056EF /* leaders_99_projectTests */ = {
@@ -371,6 +389,7 @@
 				D19DB38B2487E7C7009D78E0 /* SecondCustomTableViewCell.xib in Resources */,
 				D12DDF5F24923EC600FC37DE /* Artboard 12.png in Resources */,
 				D1F68E6D2473E2B8004056EF /* LaunchScreen.storyboard in Resources */,
+				D1DD6F1624987DFA00D5A069 /* Artboard 27 copy 2.png in Resources */,
 				D1E1937A24952B3D00764328 /* Artboard 24.png in Resources */,
 				D1E1937924952B3D00764328 /* Artboard 23.png in Resources */,
 				D176F2DB2495DAE3005A711D /* Artboard 27.png in Resources */,
@@ -382,14 +401,19 @@
 				D12DDF5624921A4E00FC37DE /* Artboard 4 copy.png in Resources */,
 				D17EB9B724925F0C0073C3BF /* Artboard 16.png in Resources */,
 				D1E193742495298A00764328 /* Artboard 22.png in Resources */,
+				D1DD6F1A24987EFA00D5A069 /* Artboard 34.png in Resources */,
 				D1F68E6A2473E2B8004056EF /* Assets.xcassets in Resources */,
+				D1DD6F1024987DF300D5A069 /* Artboard 27(1).png in Resources */,
 				D12DDF5E24923EC600FC37DE /* Artboard 14.png in Resources */,
 				D10B312A247FCA5300BEB8FC /* CustomTableViewCell.xib in Resources */,
 				D12DDF5924921A4E00FC37DE /* Artboard 7.png in Resources */,
+				D1DD6F1524987DFA00D5A069 /* Artboard 27 copy 3.png in Resources */,
 				D12DDF5824921A4E00FC37DE /* Artboard 3.png in Resources */,
 				D12DDF5724921A4E00FC37DE /* Artboard 8.png in Resources */,
+				D1DD6F1924987EFA00D5A069 /* Artboard 33.png in Resources */,
 				D1E1937B24952B3D00764328 /* Artboard 25.png in Resources */,
 				D114B9672493F7C2003BDAD2 /* Artboard 16 copy.png in Resources */,
+				D1DD6F1424987DFA00D5A069 /* Artboard 27 copy.png in Resources */,
 				D1F68E682473E2B6004056EF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -714,7 +738,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "shibahara107.leaders-99-project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Airmes;
 				PROVISIONING_PROFILE_SPECIFIER = "L12-YoshinoriShibahara-Development";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -737,7 +761,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "shibahara107.leaders-99-project";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Airmes;
 				PROVISIONING_PROFILE_SPECIFIER = "L12-YoshinoriShibahara-Development";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
