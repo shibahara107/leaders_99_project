@@ -22,8 +22,9 @@ class SignUpViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        
-        view.backgroundColor = backgroundColor
+
+        self.overrideUserInterfaceStyle = .light
+//        view.backgroundColor = backgroundColor
         
         print("Sign Up")
         

@@ -25,6 +25,8 @@ class MessageViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        self.overrideUserInterfaceStyle = .light
+        
         messageContentView.text = messageContent
         fromNameLabel.text = fromName
         toNameLabel.text = toName

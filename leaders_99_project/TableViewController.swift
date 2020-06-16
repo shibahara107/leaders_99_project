@@ -27,6 +27,8 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.overrideUserInterfaceStyle = .light
+        
         print("TableView")
         print(currentUserName!)
         print(currentUserEmail!)
