@@ -43,11 +43,15 @@ class ViewController: UIViewController {
         print(currentUserEmail!)
         print(currentUserID!)
         
-        fromNameInputField.text = currentUserName
+        fromNameInputField.text = "From, \(currentUserName ?? "")"
         
         databaseReference = Database.database().reference()
         
         dateFormatter.dateFormat = "yyyyMMddHHmm"
+        
+        toNameInputField.attributedPlaceholder = NSAttributedString(string: "Dear,", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+        toIDInputField.attributedPlaceholder = NSAttributedString(string: "Recipient's ID", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
+        fromNameInputField.attributedPlaceholder = NSAttributedString(string: "", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         
         //        databaseReference.observe(.childAdded, with: { snapshot in
         //            if let obj = snapshot.value as? [String: AnyObject], let toName = obj["toName"] as? String, let toID = obj["toID"] as? String, let fromName = obj["fromName"] as? String, let message = obj["message"] {
