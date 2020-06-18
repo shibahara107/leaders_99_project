@@ -117,7 +117,6 @@ class LogInViewController: UIViewController {
         }
     }
     
-    
     @IBAction func pushSignInButton(_ sender: Any) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let viewController = storyboard.instantiateViewController(identifier: "SignUpViewController")

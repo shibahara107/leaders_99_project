@@ -27,6 +27,8 @@
 		D176F2DB2495DAE3005A711D /* Artboard 27.png in Resources */ = {isa = PBXBuildFile; fileRef = D176F2DA2495DAE3005A711D /* Artboard 27.png */; };
 		D179B0B524790C3100654EF1 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D179B0B424790C3000654EF1 /* TableViewController.swift */; };
 		D17EB9B724925F0C0073C3BF /* Artboard 16.png in Resources */ = {isa = PBXBuildFile; fileRef = D17EB9B624925F0C0073C3BF /* Artboard 16.png */; };
+		D1998FC2249B0B1E0086C19C /* Artboard 33 copy.png in Resources */ = {isa = PBXBuildFile; fileRef = D1998FC1249B0B1E0086C19C /* Artboard 33 copy.png */; };
+		D1998FC4249B0B220086C19C /* Artboard 36.png in Resources */ = {isa = PBXBuildFile; fileRef = D1998FC3249B0B220086C19C /* Artboard 36.png */; };
 		D19DB38A2487E7C7009D78E0 /* SecondCustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D19DB3882487E7C7009D78E0 /* SecondCustomTableViewCell.swift */; };
 		D19DB38B2487E7C7009D78E0 /* SecondCustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D19DB3892487E7C7009D78E0 /* SecondCustomTableViewCell.xib */; };
 		D1BF2C682483D2D100916FF4 /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1BF2C672483D2D100916FF4 /* MessageViewController.swift */; };
@@ -99,6 +101,8 @@
 		D176F2DA2495DAE3005A711D /* Artboard 27.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 27.png"; sourceTree = "<group>"; };
 		D179B0B424790C3000654EF1 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		D17EB9B624925F0C0073C3BF /* Artboard 16.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 16.png"; sourceTree = "<group>"; };
+		D1998FC1249B0B1E0086C19C /* Artboard 33 copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 33 copy.png"; sourceTree = "<group>"; };
+		D1998FC3249B0B220086C19C /* Artboard 36.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Artboard 36.png"; sourceTree = "<group>"; };
 		D19DB3882487E7C7009D78E0 /* SecondCustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondCustomTableViewCell.swift; sourceTree = "<group>"; };
 		D19DB3892487E7C7009D78E0 /* SecondCustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SecondCustomTableViewCell.xib; sourceTree = "<group>"; };
 		D1BF2C672483D2D100916FF4 /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
@@ -208,6 +212,8 @@
 				D1DD6F1124987DFA00D5A069 /* Artboard 27 copy.png */,
 				D1DD6F1724987EFA00D5A069 /* Artboard 33.png */,
 				D1DD6F1824987EFA00D5A069 /* Artboard 34.png */,
+				D1998FC1249B0B1E0086C19C /* Artboard 33 copy.png */,
+				D1998FC3249B0B220086C19C /* Artboard 36.png */,
 			);
 			path = Assets;
 			sourceTree = "<group>";
@@ -401,8 +407,10 @@
 				D12DDF5624921A4E00FC37DE /* Artboard 4 copy.png in Resources */,
 				D17EB9B724925F0C0073C3BF /* Artboard 16.png in Resources */,
 				D1E193742495298A00764328 /* Artboard 22.png in Resources */,
+				D1998FC2249B0B1E0086C19C /* Artboard 33 copy.png in Resources */,
 				D1DD6F1A24987EFA00D5A069 /* Artboard 34.png in Resources */,
 				D1F68E6A2473E2B8004056EF /* Assets.xcassets in Resources */,
+				D1998FC4249B0B220086C19C /* Artboard 36.png in Resources */,
 				D1DD6F1024987DF300D5A069 /* Artboard 27(1).png in Resources */,
 				D12DDF5E24923EC600FC37DE /* Artboard 14.png in Resources */,
 				D10B312A247FCA5300BEB8FC /* CustomTableViewCell.xib in Resources */,
