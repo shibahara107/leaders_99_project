@@ -54,6 +54,8 @@ class ViewController: UIViewController {
         toIDInputField.attributedPlaceholder = NSAttributedString(string: "Recipient's ID", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         fromNameInputField.attributedPlaceholder = NSAttributedString(string: "", attributes: [NSAttributedString.Key.foregroundColor: UIColor.gray])
         
+        self.hideKeyboardWhenTappedAround()
+        
         //        databaseReference.observe(.childAdded, with: { snapshot in
         //            if let obj = snapshot.value as? [String: AnyObject], let toName = obj["toName"] as? String, let toID = obj["toID"] as? String, let fromName = obj["fromName"] as? String, let message = obj["message"] {
         //                let currentText = self.textView.text
